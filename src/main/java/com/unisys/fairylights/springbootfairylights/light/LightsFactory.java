@@ -12,11 +12,11 @@ public class LightsFactory {
      * @param numberOfLights
      * @return List of lights
      */
-    public static List<LightImpl> lightsBuilder(int numberOfLights) {
+    public static List<Light> lightsBuilder(int numberOfLights) {
 
         LightColour[] listColours = LightColour.values();
 
-        List<LightImpl> lights = new ArrayList<>();
+        List<Light> lights = new ArrayList<>();
 
         for (int j = 0; j < numberOfLights; j++) {
             lights.add(new LightImpl(j + 1, listColours[j % listColours.length]));
@@ -29,7 +29,7 @@ public class LightsFactory {
      * Building lights of fixed number of provided(20)
      * @return List of lights
      */
-    public static List<LightImpl> lightsFixedBuilder() {
+    public static List<Light> lightsFixedBuilder() {
         return lightsBuilder(NUMBER_OF_LIGHTS);
     }
 

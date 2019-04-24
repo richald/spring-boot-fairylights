@@ -29,7 +29,7 @@ public class StrategyColour extends AbstractStrategyImpl {
     }
 
     @Override
-    public void activateLigths(List<LightImpl> lights) {
+    public void activateLigths(List<Light> lights) {
 
         // List of colours
         List<LightColour> colours = Arrays.asList(LightColour.values());
@@ -38,8 +38,6 @@ public class StrategyColour extends AbstractStrategyImpl {
         List<List<Light>> sortedLights = new ArrayList<>();
 
         for (final LightColour colour : colours) {
-
-
             List<Light> colouredLights = findLights(lights, new FilterPredicate<Light>() {
 
                 @Override
@@ -59,7 +57,7 @@ public class StrategyColour extends AbstractStrategyImpl {
         }while(running);
     }
 
-    private List<Light> findLights(List<LightImpl> lights, FilterPredicate<Light> predicate) {
+    private List<Light> findLights(List<Light> lights, FilterPredicate<Light> predicate) {
         List<Light> coloredLights = new ArrayList<>();
 
         for (Light light : lights) {

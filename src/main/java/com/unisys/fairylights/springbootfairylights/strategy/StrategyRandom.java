@@ -19,7 +19,7 @@ public class StrategyRandom extends AbstractStrategyImpl {
      *  Displays a single random light.
      */
     @Override
-    public void activateLigths(List<LightImpl> lights) {
+    public void activateLigths(List<Light> lights) {
 
         int nextRandomNumber = new Random().nextInt(lights.size() - 1);
 

@@ -23,13 +23,13 @@ public class StrategySequence extends AbstractStrategyImpl {
     private boolean running = true;
 
     @Override
-    public void activateLigths(List<LightImpl> lights) {
+    public void activateLigths(List<Light> lights) {
         do {
             displayLights(lights);
         } while (running);
     }
 
-    private void displayLights(List<LightImpl> lights) {
+    private void displayLights(List<Light> lights) {
         for (Light light : lights) {
             flash(light, LITGHS_WAIT_TIME);
         }

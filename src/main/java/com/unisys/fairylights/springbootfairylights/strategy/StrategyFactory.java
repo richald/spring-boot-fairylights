@@ -21,7 +21,7 @@ public class StrategyFactory {
         /**********************************************************
          *  use RandomStrategySample to add new strategies
          ****************************/
-        SUPPORTED_STRATEGIES.put(StrategyRandom.NAME, new StrategyRandom());
+        //SUPPORTED_STRATEGIES.put(StrategyRandom.NAME, new StrategyRandom());
     }
 
     /**
