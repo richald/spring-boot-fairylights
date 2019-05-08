@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 public class CommandLineFairyLightsAppRunner implements CommandLineRunner {
 
     private static final String EXCEPTION_NO_ARGS = "Exception.NoArgs";
+
     private static Logger LOG = LoggerFactory.getLogger(CommandLineFairyLightsAppRunner.class);
 
     private int numberOfLights = LightsFactory.NUMBER_OF_LIGHTS;
